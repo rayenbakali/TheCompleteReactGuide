@@ -25,7 +25,7 @@ function App() {
   <button className={currentIndex===1? "active":""} onClick={()=>setCurrentIndex(1)}>Second Section?</button>
   <button className={currentIndex===2? "active":""} onClick={()=>setCurrentIndex(2)}>Third Section?</button>
   {content[currentIndex].map(e=>
-  <li></li>
+  <li>{e}</li>
  )}
  </>
 

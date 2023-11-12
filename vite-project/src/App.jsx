@@ -1,35 +1,29 @@
-import { useState } from 'react'
-
-import './App.css'
-
+const reactDescription = ["Fundamnental ","Crucial","Core"]
+function getRandomInt(max){
+  return Math.floor(Math.random()*(max+1))
+}
+function Header(){
+  const dynamictext= reactDescription[getRandomInt(2)]
+  return (<header>
+  <img src="src/assets/react-core-concepts.png" alt="Stylized atom" />
+  <h1>React Essentials</h1>
+  <p>
+    {dynamictext} React concepts you will need for almost any app you are
+    going to build!
+  </p>
+</header>)   
+}
+ 
 function App() {
-  const content = [
-[
-  "salem alaykom",
-  "hedhi first section",
-  "beslema"
-],
-[ "salem alaykom",
-"hedhi second section",
-"beslema"],
-[ "salem alaykom",
-"hedhi third section",
-"beslema"]
-  ];
 
-  const[currentIndex,setCurrentIndex]=useState(0)
-  return(
-<>
-<h1>Choose your section</h1>
-  <button className={currentIndex===0? "active":""} onClick={()=>setCurrentIndex(0)}>First Section?</button>
-  <button className={currentIndex===1? "active":""} onClick={()=>setCurrentIndex(1)}>Second Section?</button>
-  <button className={currentIndex===2? "active":""} onClick={()=>setCurrentIndex(2)}>Third Section?</button>
-  {content[currentIndex].map(e=>
-  <li>{e}</li>
- )}
- </>
-
- )
+  return (
+    <div>
+     <Header/>
+      <main>
+        <h2>Time to get started!</h2>
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;

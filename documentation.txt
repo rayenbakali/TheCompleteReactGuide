@@ -1,0 +1,9 @@
+We'll be doing a lot :p don't get annoyed in the process of learning !
+
+When we export from js file in order to import in another,
+There's a big difference between export and export default.
+
+when we import javascript in html don't forget to add type="module"
+
+when we import * as name from "path"
+it's like we imported a js object that we can easily access for example : name.atrribute , name.method

@@ -20,7 +20,7 @@ function App() {
     <div>
      <Header/>
       <main>
-        <h2>Time to get started!</h2>
+        <h2>Time to get started with this shit!</h2>
       </main>
     </div>
   );
